@@ -59,7 +59,7 @@ The full design documentation `DSP48A1_Report.pdf` includes:
 To work with this project, you’ll need a Verilog simulator. **QuestaSim** is recommended.
 
 ### 1. Quick Simulation (Recommended)
-A preconfigured script `run_dsp.do` is provided to automate the simulation.
+A preconfigured script `run.do` is provided to automate the simulation.
 
 **Steps:**
 1. Ensure your simulator is installed and licensed.  
