@@ -10,6 +10,7 @@ The DSP48A1 is a dedicated arithmetic block capable of handling fast multiplicat
 ## Design interface
      ![Block Diagram](./image/DSP48A1_design.png)
 
+
  
 ## Features
 - Parameterized DSP48A1 slice implementation.
