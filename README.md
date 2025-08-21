@@ -4,7 +4,12 @@ This project implements a **DSP48A1 slice** for Xilinx Spartan-6 FPGAs using **V
 The DSP48A1 is a dedicated arithmetic block capable of handling fast multiplication, addition, accumulation, and other DSP-related operations.
 
 ---
+## Reference
+ - This design is based on the DSP48A1 documentation and guidlines from AMD : https://docs.amd.com/v/u/en-US/ug389
+---
+## Design interface
 
+ 
 ## Features
 - Parameterized DSP48A1 slice implementation.
 - Supports synchronous and asynchronous resets.
