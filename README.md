@@ -1,63 +1,70 @@
-# Spartan-6 DSP48A1 Slice
+# DSP48A1 Slice for Xilinx Spartan-6
+
+This project implements a **DSP48A1 slice** for Xilinx Spartan-6 FPGAs using **Verilog HDL**, optimized for high-performance digital signal processing tasks such as multiply-accumulate (MAC) operations, filtering, and FFTs.  
+The DSP48A1 is a dedicated arithmetic block capable of handling fast multiplication, addition, accumulation, and other DSP-related operations.
+
+---
 
 ## Features
-- Parameterized **DSP48A1** implementation
-- Supports synchronous and asynchronous reset
+- Parameterized DSP48A1 slice implementation.
+- Supports synchronous and asynchronous resets.
 - Implements:
-  - Multiplication
-  - Addition / Subtraction
-  - Accumulation
-  - Multiplexing (input selection, output modes)
-  - Cascade modes
-  - Carry in / Carry out
-- Fully synthesizable Verilog HDL
-- Testbench included for functional verification
+  - 18x18 high-speed multiplication  
+  - Addition & subtraction  
+  - Accumulation with pipeline registers  
+  - Flexible input multiplexing (A, B, C, D, OPMODE, Carry)  
+  - Cascade and direct input modes for B port  
+  - Carry-in/out with configurable source selection  
+- Fully synthesizable Verilog HDL.  
+- Modular design with reusable submodules.  
+- Testbench included for functional verification.  
 
 ---
 
 ## Project Structure
-
 📁 src   📁 tb   📁 constraints   📄 DSP48A1_Report.pdf   📄 README.md
-
 ---
 
 ## Tools
-- **QuestaSim** – Simulation
-- **QuestaLint** – Linting
-- **Xilinx Vivado** – Synthesis & Implementation
-- **VS Code** – Source editing
+- **QuestaSim** — Simulation  
+- **QuestaLint** — Linting  
+- **Xilinx Vivado** — Synthesis, Implementation  
 
 ---
 
 ## Documentation
 The full design documentation `DSP48A1_Report.pdf` includes:
-- RTL Design
-- Testbench description
-- Simulation results
-- DO file for automated simulation
-- Constraint file
-- RTL schematic
-- Synthesis report
+- RTL Design  
+- Testbench description  
+- Simulation results  
+- DO file  
+- Constraint file  
+- RTL Schematic  
+- Synthesis report  
+- Implementation report  
+- Timing analysis  
+- Device utilization  
+- Linting with 0 errors and warnings  
 
 ---
 
-## Simulation
-### 1. Automatic Simulation
-Run the provided DO/script file:
-- Compiles all Verilog files
-- Loads the testbench
-- Runs the simulation
-- Displays the waveform
-
-### 2. Manual Simulation
-1. Compile source files from `src/`
-2. Compile testbench files from `tb/`
-3. Load the top-level testbench (`DSP48A1_tb`)
-4. Run the simulation and observe waveforms
+## Design Files
+- `spartan6-DSP48A1.v`: Top-level Verilog module for DSP48A1 slice implementation.  
+- `spartan6-DSP48A1_tb.v`: Verilog testbench for simulation and verification.  
+- `run.do`: Script for automating the simulation process.  
 
 ---
 
-## Testbench
-- The provided `DSP48A1_tb.v` contains example DSP operations
-- Extend with custom vectors for more thorough testing
+## Getting Started
+To work with this project, you’ll need a Verilog simulator. **QuestaSim** is recommended.
 
+### 1. Quick Simulation (Recommended)
+A preconfigured script `run_dsp.do` is provided to automate the simulation.
+
+**Steps:**
+1. Ensure your simulator is installed and licensed.  
+2. Open a terminal or simulator console.  
+3. Navigate to the project directory.  
+4. Run:  
+   ```tcl
+   do run.do
