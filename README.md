@@ -29,7 +29,7 @@ The DSP48A1 is a dedicated arithmetic block capable of handling fast multiplicat
 ---
 
 ## Project Structure
-📁 constraints  📁 do_file  📁 src   📁 tb  📄 DSP48A1_Report.pdf   📄 README.md
+📁 constraints  📁 do_file  📁 src   📁 tb  📁 image 📄 DSP48A1_Report.pdf   📄 README.md
 ---
 
 ## Tools
