@@ -8,9 +8,9 @@ The DSP48A1 is a dedicated arithmetic block capable of handling fast multiplicat
  - This design is based on the DSP48A1 documentation and guidlines from AMD : https://docs.amd.com/v/u/en-US/ug389
 ---
 ## Design interface
-     ![Block Diagram](./image/DSP48A1_design.png)
+![Block Diagram](https://raw.githubusercontent.com/RanaEssam4/Spartan6-DSP48A1/main/image/DSP48A1_design.png)
 
-
+---
  
 ## Features
 - Parameterized DSP48A1 slice implementation.
